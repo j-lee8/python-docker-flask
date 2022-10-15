@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SpaceX ships</title>
-</head>
-<body>
-    <h1>SpaceX launches</h1>
-    <h3>{{ name }}</h3>
-    <!-- <table>
-        <tr>
-            {% for col in name %}
-                <td>{{ col }}</td>
-            {% endfor %}
-        </tr> 
-    </table> -->
-</body>
+<html lang="en" style="height: 100vh; display: flex;">
+    <head>
+        <meta charset="UTF-8">
+        <title>SpaceX ships - Home</title>
+    </head>
+    <body style="display: flex; flex: 1; background-color: rgba(0, 0, 0, 0.2); justify-content: center; align-items: center;">
+        <div style="flex-direction: column; display: flex; justify-content: center;">
+            <h2>SpaceX launches</h2>
+            <a href="{{ url_for('get_ships') }}"><h4>View launches</h4></a>
+        </div>
+    </body>
 </html>
